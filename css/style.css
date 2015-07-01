@@ -3,20 +3,30 @@
 
 body { font-family:微軟正黑體; }
 
-nav{
+nav#mainn{
+	position: fixed;
+	z-index: 1;
 	display:block;
-	width:800px;
-background-color: #ffffff;
+	height: 50px;
+	width: 100%;
+background-color: #eee;
 margin: 0 auto;
-margin-top: 100px}
+box-shadow: 3px 2px 5px 0px rgba(212,205,212,1);
+opacity: 0.9;
+}
+
+nav#mainn ul{
+	position: relative;
+	width: 800px;
+	height: 50px;
+	margin: 0 auto;
+}
 
 nav ul li{
 	float:left;
 	position:relative;
-	background-color: #ffffff;
 	font-family: calibri;
-	font-size: 22px;
-	color:#c98f8f
+	
 }
 nav ul li a{
 	display: block;
@@ -24,7 +34,9 @@ nav ul li a{
 	height:50px;
 	line-height:50px;
 	text-align: center;
-	color:#c98f8f
+	color:#c98f8f;
+	font-size: 22px;
+	
 }
 
 nav ul li a:hover{
@@ -32,58 +44,244 @@ nav ul li a:hover{
 	color:#c3b1b1;
 }
 
-nav ul li ul{
-	display: none;
-	width:200px;
-	text-align:center;
-	position:absolute;
-	z-index:1;
-	top: 100%;
-	border:1px solid #CCC;
-
-}
-nav ul li ul li a{color:#c98f8f;}
-
-nav ul li ul li{
-	color: #c98f8f;
-	float:center;
-}
-
-/*第一層的被按住後，第二層ul就打開了*/
-
-nav ul li:hover ul {
-	display: block;
-	right: 0;
-	left: 0;
-	top: 100%;
-}
-
-
-
+/*main*/
 .welcome{
 	text-align: center;
-	padding: 100px 0;
+	width: 100%;
+	height: 768px;
 	font-family: calibri;
+
 }
 
-.welcome img{
+.welcome img#aa{
 	display:block;
-	height: 300px; width: 1200px;
+	position: relative;
+	top:140px;
+	height: 300px; 
+	width: 1200px;
 	padding-top: 15px;
 	margin: 0 auto;
+	padding: 0 0 20px 0;
+}
+.welcome p#daa{
+	display:block;
+	position: relative;
+	top:150px;
+	font-size: 50px;
+	line-height:60px;
+	color:#BC8F8F;
+	text-shadow:1px 2px #eee;
+	font-family: 'Swanky and Moo Moo', cursive;
+	
 }
 
 .welcome h1{
-	font-size: 50px;
-	line-height: 60px;
+	display:block;
+	position: relative;
+	top:130px;
+	font-size: 30px;
+	line-height: 28px;
 	color:#9a7b70;
-	text-shadow:5px 5px #eee;
+	text-shadow:2px 2px #eee;
 	padding: 50px;
+	font-family: 'Swanky and Moo Moo', cursive;
 }
 
 .welcome p{
 	font-size: 14px;
 	color:#b4a192;
+}
+/*自介*/
+#aboutme {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    background-color: #FCFCFC;
+
+}
+
+#aboutme img{
+	display: block;
+	position: relative;
+	top: 100px;
+    left: 50px;
+}
+
+#aboutme h1{
+	position: absolute;
+	top: 80px;
+    left: 400px;
+	font-size: 50px;
+	line-height: 60px;
+	color:#c98f8f;
+	font-family: 'Signika', sans-serif;
+	
+}
+#aboutme p#namee{
+	position: absolute;
+	top: 140px;
+    left: 400px;
+	font-size: 22px;
+	line-height: 60px;
+	color:#c98f8f;
+	text-align:left;
+	
+}
+#aboutme h2{
+	display: block;
+    position: absolute;
+    top: 240px;
+    left: 400px;
+	font-size: 40px;
+	line-height: 60px;
+	color:#9a7b70;
+	font-family: 'Signika', sans-serif;
+
+}
+#aboutme hr{
+	display: block;
+    position: absolute;
+    top: 210px;
+    left: 400px;
+}
+
+#aboutme p#edu {
+font-size: 25px;
+	
+	color:#AAAAAA;
+	font-family: calibri;
+	display: block;
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    text-align:left;
+    line-height: 30px;
+}
+#aboutme p#edu a{
+ color:#AAAAAA;
+}
+#aboutme p#edu a:hover{
+ color:#EEB4B4;
+}
+#win{
+	position: relative;
+    width: 100%;
+    height: 560px;
+    background-color: #EAEAEA;
+}
+h3{
+	font-size: 40px;
+	line-height: 60px;
+	color:#9a7b70;
+	font-family: 'Signika', sans-serif;
+}
+
+#win h3{
+	display: block;
+    position: absolute;
+    top: 100px;
+    left:40px;
+	font-size: 40px;
+	line-height: 60px;
+	color:#9a7b70;
+	font-family: 'Signika', sans-serif;
+	
+}
+#win p#elsea{
+	font-size: 25px;
+	color:#AAAAAA;
+	font-family: calibri, sans-serif;
+	display: inline;
+    position:relative;
+    top: 160px;
+    left:40px;
+    text-align:left;
+    line-height: 35px;
+}
+#win img#aaa{
+	display: block;
+	position: absolute;
+	top: 120px;
+	left: 840px;
+}
+#win img#bbb{
+	display: block;
+	position: absolute;
+	top: 340px;
+	left: 840px;
+	
+}
+#job{
+	background-color: #CDB7B5;
+	height: 800px;
+	width: 100%
+}
+#job h3{
+	color: #5E2612;
+	position: relative;
+	top: 100px;
+    left:30px;
+}
+#job p#jobb{
+	display: block;
+	width: 800px;
+	color: #EEE9E9;
+	position: relative;
+	top: 100px;
+    left:30px;
+    font-family: calibri, sans-serif;
+    font-size: 25px;
+}
+
+#job img#jo{
+	display: block;
+	float: right;
+}
+#extra{
+	background-color: #EDEDED	;
+	height: 800px;
+	width: 100%
+}
+#extra h3 {
+
+	position: relative;
+	top: 100px;
+    left:30px;
+}
+#extra p#ex {
+	position: relative;
+	display: block;
+	width: 890px;
+	top: 100px;
+    left:30px;
+    font-family: calibri, sans-serif;
+    font-size: 25px;
+    color: #A8A8A8;
+}
+
+
+#workKk{
+background-color: white;
+	height: 150px;
+	width: 100%;
+}
+
+#workKk h3{
+display: block;
+    position: relative;
+    top: 80px;
+    left:40px;
+	font-size: 40px;
+	line-height: 60px;
+	color:#9a7b70;
+	font-family: 'Signika', sans-serif;
+
+}
+
+#art {
+	background-color: white;
+	height: 900px;
+	width: 100%;
 }
 
 
@@ -91,6 +289,7 @@ nav ul li:hover ul {
 footer{
 	background-color:#eee;
 	text-align:center;
-	margin-top: 80px;
+	clear: both;
 	padding:80px 0;}
+
 
